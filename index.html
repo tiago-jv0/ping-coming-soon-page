@@ -12,6 +12,8 @@
 
   <link rel="stylesheet" href="./styles.css">
 
+  <script src="./main.js" defer></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
@@ -32,8 +34,10 @@
       </h2>
 
       <div class="hero__actions">
-        <input class="hero__input" name="email" id="email" type="email" required placeholder="Your email address…">
-
+        <div class="hero__input-container">
+          <input class="hero__input" name="email" id="email" type="email" required placeholder="Your email address…">
+          <p class="hero__input-error"></p>
+        </div>
         <button type="button" class="hero__button">Notify Me</button>
       </div>
 
@@ -44,7 +48,6 @@
   </main>
 
   <footer class="footer">
-
     <ul class="footer__socials">
       <li class="footer__social">
         <a class="footer__link" href="#">

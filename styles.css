@@ -81,6 +81,7 @@ main {
   color: var(--gray);
 }
 .hero__title strong {
+  font-weight: 700;
   color: var(--very-dark-blue);
 }
 @media screen and (min-width: 768px) {
@@ -129,7 +130,10 @@ main {
   font-weight: 300;
   font-size: 1.2rem;
   line-height: 2rem;
-  color: var(--pale-blue);
+  color: var(--very-dark-blue);
+}
+.hero__input--error {
+  border-color: var(--light-red);
 }
 .hero__input::placeholder {
   color: var(--pale-blue);
@@ -142,6 +146,32 @@ main {
     font-size: 1.6rem;
     line-height: 2rem;
   }
+}
+.hero__input-container {
+  position: relative;
+}
+.hero__input-error {
+  margin-bottom: 2rem;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  letter-spacing: 0.15px;
+  margin-top: 6px;
+  margin-left: 2.4rem;
+  display: none;
+  color: var(--light-red);
+}
+@media screen and (min-width: 768px) {
+  .hero__input-error {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateX(0);
+  }
+}
+.hero__input-error--visible {
+  display: block;
 }
 .hero__button {
   width: 28.1rem;
@@ -158,6 +188,9 @@ main {
   font-size: 1.2rem;
   line-height: 1.6rem;
   color: white;
+}
+.hero__button:hover {
+  opacity: 0.75;
 }
 @media screen and (min-width: 768px) {
   .hero__button {
@@ -206,6 +239,11 @@ main {
   align-items: center;
   justify-content: center;
   padding: 0.5rem;
+  border-radius: 50%;
+}
+.footer__link:hover {
+  background-color: #4C7BF3;
+  color: white;
 }
 .footer__link {
   color: var(--blue);
