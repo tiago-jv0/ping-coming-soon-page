@@ -1,0 +1,55 @@
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smooth: antialiased;
+    font-weight: 400;
+
+    font-family: var(--primary-font);
+    font-style: normal;
+    
+    font-weight: 400;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+button {
+    cursor: pointer;
+}
+
+img,
+source {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+main {
+    padding-top: 8.1rem;
+    padding-bottom: 12rem;
+
+    max-width: 32rem;
+    margin: auto;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 8rem;
+        padding-bottom: 7.2rem;
+
+        max-width: 64rem;
+    }
+}
